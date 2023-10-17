@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" controllerName="my.app.z01_loginform.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox class="sapUiSmallMargin">
+							<f:SimpleForm id="f1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3" adjustLableSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+								<f:content>
+										<Text id="t1" text="Welcome! User"/>
+										<Label text="UserName"/>
+										<Input id="i1" placeholder="Enter UserName ..." value=""/>
+										<Label text="Passworde"/>
+										<Input id="i2" type="Password" placeholder="Enter Password ..." value=""/>
+								</f:content>
+								<Button text="Logon" id="b1" type="Emphasized" press="onLogon"/>
+								<Button text="Reset" id="b2" type="Emphasized" press="onReset"/>
+							</f:SimpleForm>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
